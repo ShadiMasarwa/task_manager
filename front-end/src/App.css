@@ -1,0 +1,33 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  margin: 10px;
+  min-width: 200px;
+
+}
+.btndeletechecked {
+  background-color: #fd7e14;
+}
+
+.btnDeleteAll{
+  background-color: #d9534f ;
+
+}
+
+.btnImport{
+ background-color: #5cb85c 
+}

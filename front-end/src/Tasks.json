@@ -1,0 +1,44 @@
+ [
+   {
+     "text": "Do something nice for someone I care about",
+     "done": true,
+     "indx": 1
+
+   },
+   {
+     "text": "Memorize the fifty states and their capitals",
+     "done": false, 
+     "indx": 2
+   },
+   {
+     "text": "Watch a classic movie",
+     "done": false,
+     "indx": 3
+
+   },
+   {
+     "text": "Contribute code or a monetary donation to an open-source software project",
+     "done": false,
+     "indx": 4
+   },
+   {
+     "text": "Solve a Rubik's cube",
+     "done": false,
+     "indx": 5
+   },
+   {
+     "text": "Bake pastries for me and neighbor",
+     "done": false,
+     "indx": 6
+   },
+   {
+     "text": "Go see a Broadway production",
+     "done": false,
+     "indx": 7
+   },
+   {
+     "text": "Write a thank you letter to an influential person in my life",
+     "done": true,
+     "indx": 8
+   }
+ ]

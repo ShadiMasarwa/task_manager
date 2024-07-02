@@ -1,0 +1,28 @@
+.tasksConteainer {
+  min-height: 80vh;
+  max-height: 80vh;
+  background-image: url(./avenue.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0px 0px 15px 15px;
+  width: 40%;
+  margin-top: 10px;
+  overflow-y: auto;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  /* max-height: 80vh; */
+}
+
+
+
+
+/* . {
+  left: 10px;
+  bottom: 10px;
+} */
+
+.btnCheckAll {
+  bottom: 10px;
+  right: 10px;
+}
