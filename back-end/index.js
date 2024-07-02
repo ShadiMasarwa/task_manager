@@ -2,23 +2,20 @@ const express = require("express");
 const app = express();
 const PORT = process.env.port || 5000;
 const todoList = require("./todolist.json");
-const cors = require("cors");
+// const cors = require("cors");
 const fs = require("fs");
 
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
 
 app.get("/todolist", (req, res) => {
   return res.json(todoList);
 });
 
 app.post("/todolist/", (req, res) => {
-  let taskId = 1;
-  try {
-    taskId = todoList[todoList.length - 1].indx + 1;
-  } catch (error) {
-    taskId = 1;
-  }
+  let taskId =
+    todoList.length === 0 ? 1 : todoList[todoList.length - 1].indx + 1;
+
   const newTask = Object.assign({ indx: taskId }, req.body);
   todoList.push(newTask);
   fs.writeFile("./todolist.json", JSON.stringify(todoList), (err, data) => {
@@ -37,7 +34,6 @@ app.put("/todolist/:taskId", (req, res) => {
 
 app.delete("/todolist/:taskId", (req, res) => {
   const id = Number(req.params.taskId);
-  //   const newTasks = todoList.filter((tasks) => todoList.indx != id);
   const index = todoList.findIndex((todoList) => todoList.indx === id);
   todoList.splice(index, 1);
   fs.writeFile("./todolist.json", JSON.stringify(todoList), (err, data) => {
